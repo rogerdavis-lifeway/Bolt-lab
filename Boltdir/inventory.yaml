@@ -1,0 +1,19 @@
+groups:
+  - name: docker
+    groups:
+      - name: lb
+        nodes:
+          - 127.0.0.1:32774
+      - name: db
+        nodes:
+          - 127.0.0.1:32775
+      - name: app
+        nodes:
+          - 127.0.0.1:32776
+          - 127.0.0.1:32777
+config:
+  ssh:
+    host-key-check: false
+    user: root
+    password: root
+      
